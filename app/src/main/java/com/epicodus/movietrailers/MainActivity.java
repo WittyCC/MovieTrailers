@@ -1,10 +1,12 @@
 package com.epicodus.movietrailers;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -16,6 +18,7 @@ import java.util.List;
 
 public class MainActivity extends YouTubeBaseActivity {
 
+    private TextView mAppNameTextView;
     private static final String TAG = "MainActivity";
 
     YouTubePlayerView mYouTubePlayerView;
@@ -26,6 +29,10 @@ public class MainActivity extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAppNameTextView = (TextView) findViewById(R.id.textView);
+        Typeface theaterFont = Typeface.createFromAsset(getAssets(), "fonts/Capture_it.ttf");
+        mAppNameTextView.setTypeface(theaterFont);
 
         Log.d(TAG, "onCreate: Starting.");
 

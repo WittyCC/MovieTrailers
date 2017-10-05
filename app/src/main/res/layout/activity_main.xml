@@ -7,23 +7,31 @@
     android:layout_height="match_parent"
     tools:context="com.epicodus.movietrailers.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MOVIE TRAILERS"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="40dp"
         android:id="@+id/textView"
+        android:textColor="@color/primary_light"
+        android:layout_marginTop="37dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_centerHorizontal="true" />
 
     <view
         class="com.google.android.youtube.player.YouTubePlayerView"
         android:id="@+id/youTubePlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="56dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -33,8 +41,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PLAY"
-        android:layout_below="@+id/youTubePlay"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginBottom="195dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
