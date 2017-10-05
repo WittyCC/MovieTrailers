@@ -14,7 +14,7 @@ This project was generated with [Android Studio](https://developer.android.com/s
   * Application layout consists of a YouTube player view and a Play button. The YouTube player view has full functionality to pause video, select resolution, and skip to the next video on the playlist
 
 3. Integration
-  * YouTube Player library installed for integration of YouTube API
+  * YouTube Android Player API library installed for integration of YouTube API
 
 4. UX/UI
   * Develop custom style and background
