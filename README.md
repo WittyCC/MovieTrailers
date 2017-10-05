@@ -11,13 +11,13 @@ This project was generated with [Android Studio](https://developer.android.com/s
   * [YouTube API](https://developers.google.com/youtube/)
 
 2. Specs
-  * Please see program specifications below.
+  * Application layout consists of a YouTube player view and a Play button. The YouTube player view has full functionality to pause video, select resolution, and skip to the next video on the playlist
 
 3. Integration
-  * Initial routes or index pages with all dependencies in Controller/index.html head
+  * YouTube Player library installed for integration of YouTube API
 
 4. UX/UI
-  * Develop custom style
+  * Develop custom style and background
 
 5. Polish
   * Add styling for web application
